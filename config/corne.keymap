@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
@@ -52,10 +53,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&trans  &kp LS(AT)     &kp SQT     &kp LS(DQT)  &kp LBKT        &kp RBKT           &kp LS(POUND)  &kp LS(AMPS)   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans
+&trans  &kp LS(PRCNT)  &kp FSLH    &kp BSLH     &kp LS(LPAR)    &kp LS(RPAR)       &kp LS(EXCL)   &kp LS(QMARK)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&trans  &kp Y          &kp LS(LT)  &kp LS(GT)   &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LS(DLLR)   &kp M          &kp COMMA       &kp DOT         &kp MINUS        &trans
+                                   &trans       &mo 3           &trans             &trans         &trans         &trans
             >;
         };
 
