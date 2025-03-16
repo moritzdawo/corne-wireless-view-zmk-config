@@ -63,12 +63,23 @@
         system_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &to 4
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "System";
+        };
+
+        gaming_layer {
+            bindings = <
+&trans  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O     &kp P     &trans
+&trans  &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L     &kp UP    &to 0
+&trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp LEFT  &kp DOWN  &kp RIGHT
+                      &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "Gaming";
         };
 
         extra_1 { status = "reserved"; };
