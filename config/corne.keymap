@@ -12,6 +12,15 @@
 &mt { flavor = "tap-preferred"; };
 
 / {
+    macros {
+        mathplus: mathplus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp PLUS>;
+            label = "MATHPLUS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,7 +49,7 @@
 
             display-name = "Lower";
             bindings = <
-&trans  &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS     &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mathplus    &trans    &trans    &trans  &trans     &trans  &trans
 &trans  &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
 &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL    &trans    &trans    &trans  &trans     &trans  &trans
                                     &trans        &trans        &trans       &trans    &trans    &mo 3
