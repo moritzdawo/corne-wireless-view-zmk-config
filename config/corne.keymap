@@ -19,6 +19,13 @@
             bindings = <&none &kp PLUS>;
             label = "MATHPLUS";
         };
+
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp Y &kp P &kp E &kp SPACE &kp S &kp O &kp M &kp E &kp T &kp H &kp I &kp N &kp G &kp DOT &kp DOT &kp DOT>;
+            label = "TEST";
+        };
     };
 
     keymap {
@@ -67,7 +74,7 @@
             bindings = <
 &trans  &kp LS(AT)     &kp SQT     &kp LS(DQT)  &kp LBKT              &kp RBKT                 &kp LS(POUND)  &kp LS(AMPS)   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans
 &trans  &kp LS(PRCNT)  &kp FSLH    &kp BSLH     &kp LS(LPAR)          &kp LS(RPAR)             &kp LS(EXCL)   &kp LS(QMARK)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans  &kp PIPE       &kp LS(LT)  &kp LS(GT)   &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)    &kp LS(DLLR)   &kp M          &msc SCRL_DOWN  &msc SCRL_UP    &kp MINUS        &trans
+&trans  &kp PIPE       &kp LS(LT)  &kp LS(GT)   &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)    &kp LS(DLLR)   &test          &msc SCRL_DOWN  &msc SCRL_UP    &kp MINUS        &trans
                                    &trans       &mo 3                 &trans                   &trans         &trans         &trans
             >;
         };
