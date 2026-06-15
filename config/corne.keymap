@@ -38,7 +38,7 @@
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            // display-name = "Base";
+            display-name = "Base";
             bindings = <
 &kp ESC    &kp Q        &kp W        &mt RA(N5) E  &kp R  &kp T                   &kp Z               &mt RA(Y) U  &kp I         &mt RA(P) O  &kp P      &kp DEL
 &kp TAB    &mt RA(Q) A  &mt RA(S) S  &kp D         &kp F  &kp G                   &kp H               &kp J        &kp K         &kp L        &kp SEMI   &kp HOME
